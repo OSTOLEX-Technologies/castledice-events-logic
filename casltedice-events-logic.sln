@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "casltedice-events-logic", "casltedice-events-logic\casltedice-events-logic.csproj", "{732F8F0E-317C-473D-B13C-1D2DE9D43E26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{732F8F0E-317C-473D-B13C-1D2DE9D43E26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{732F8F0E-317C-473D-B13C-1D2DE9D43E26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{732F8F0E-317C-473D-B13C-1D2DE9D43E26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{732F8F0E-317C-473D-B13C-1D2DE9D43E26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
