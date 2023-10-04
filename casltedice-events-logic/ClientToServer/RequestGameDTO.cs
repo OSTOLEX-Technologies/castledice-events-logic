@@ -3,10 +3,8 @@
 [Serializable]
 public class RequestGameDTO : ClientToServerDTO
 {
-    public int PlayerId { get; set; }
-
-    public RequestGameDTO(string verificationKey, int playerId) : base(verificationKey)
+    public RequestGameDTO(string verificationKey) : base(verificationKey)
     {
-        PlayerId = playerId;
+
     }
 }
