@@ -3,7 +3,7 @@
 namespace casltedice_events_logic.ServerToClient;
 
 [Serializable]
-public class MakeMoveDTO
+public class MoveFromServerDTO
 {
     public MoveData MoveData { get; set; }
 }

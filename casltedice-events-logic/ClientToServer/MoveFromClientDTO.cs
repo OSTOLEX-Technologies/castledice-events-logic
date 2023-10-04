@@ -3,11 +3,11 @@
 namespace casltedice_events_logic.ClientToServer;
 
 [Serializable]
-public class MakeMoveDTO : ClientToServerDTO
+public class MoveFromClientDTO : ClientToServerDTO
 {
     public MoveData MoveData { get; set; }
     
-    public MakeMoveDTO(MoveData moveData, string verificationKey) : base(verificationKey)
+    public MoveFromClientDTO(MoveData moveData, string verificationKey) : base(verificationKey)
     {
         MoveData = moveData;
     }
