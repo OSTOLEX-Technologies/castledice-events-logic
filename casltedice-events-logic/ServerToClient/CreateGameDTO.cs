@@ -5,5 +5,5 @@ namespace casltedice_events_logic.ServerToClient;
 [Serializable]
 public class CreateGameDTO
 {
-    public GameConfigData GameConfigData { get; set; }
+    public GameStartData GameConfigData { get; set; }
 }

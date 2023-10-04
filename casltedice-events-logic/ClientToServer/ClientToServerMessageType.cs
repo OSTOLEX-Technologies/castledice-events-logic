@@ -3,5 +3,6 @@
 public enum ClientToServerMessageType
 {
     RequestGame,
-    MakeMove
+    MakeMove,
+    CancelGame
 }
