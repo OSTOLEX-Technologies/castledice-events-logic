@@ -6,4 +6,9 @@ namespace casltedice_events_logic.ServerToClient;
 public class CreateGameDTO
 {
     public GameStartData GameConfigData { get; set; }
+
+    public CreateGameDTO(GameStartData gameConfigData)
+    {
+        GameConfigData = gameConfigData;
+    }
 }

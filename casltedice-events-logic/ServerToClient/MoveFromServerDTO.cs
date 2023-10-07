@@ -6,4 +6,9 @@ namespace casltedice_events_logic.ServerToClient;
 public class MoveFromServerDTO
 {
     public MoveData MoveData { get; set; }
+
+    public MoveFromServerDTO(MoveData moveData)
+    {
+        MoveData = moveData;
+    }
 }
