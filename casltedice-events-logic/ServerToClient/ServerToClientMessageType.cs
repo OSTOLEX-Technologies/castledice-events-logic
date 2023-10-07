@@ -5,5 +5,6 @@ public enum ServerToClientMessageType
     CreateGame,
     ApproveMove,
     GiveActionPoints,
-    MakeMove
+    MakeMove,
+    CancelGame
 }
