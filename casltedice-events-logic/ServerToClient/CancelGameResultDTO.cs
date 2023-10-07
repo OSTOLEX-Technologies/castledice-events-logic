@@ -3,4 +3,9 @@
 public class CancelGameResultDTO
 {
     public bool IsCanceled { get; set; }
+
+    public CancelGameResultDTO(bool isCanceled)
+    {
+        IsCanceled = isCanceled;
+    }
 }
