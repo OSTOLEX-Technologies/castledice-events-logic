@@ -3,11 +3,9 @@
 public class MatchFoundDTO
 {
     public List<int> PlayerIds { get; set; }
-    public string GameUUID { get; set; }
 
-    public MatchFoundDTO(List<int> playerIds, string gameUuid)
+    public MatchFoundDTO(List<int> playerIds)
     {
         PlayerIds = playerIds;
-        GameUUID = gameUuid;
     }
 }
