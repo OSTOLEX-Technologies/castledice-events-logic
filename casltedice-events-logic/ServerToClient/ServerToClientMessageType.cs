@@ -2,6 +2,7 @@
 
 public enum ServerToClientMessageType
 {
+    MatchFound,
     CreateGame,
     ApproveMove,
     GiveActionPoints,
