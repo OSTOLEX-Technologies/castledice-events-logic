@@ -1,6 +1,6 @@
 ﻿namespace casltedice_events_logic.ClientToServer;
 
-public enum ClientToServerMessageType
+public enum ClientToServerMessageType : ushort
 {
     RequestGame,
     MakeMove,

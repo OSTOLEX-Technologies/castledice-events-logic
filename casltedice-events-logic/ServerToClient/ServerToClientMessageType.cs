@@ -1,6 +1,6 @@
 ﻿namespace casltedice_events_logic.ServerToClient;
 
-public enum ServerToClientMessageType
+public enum ServerToClientMessageType : ushort
 {
     MatchFound,
     CreateGame,
