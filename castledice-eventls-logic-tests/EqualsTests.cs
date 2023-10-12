@@ -52,5 +52,9 @@ public class EqualsTests
         {
             () => GetMoveFromServerDTO()
         };
+        yield return new object[]
+        {
+            () => GetInitilizeClientDTO()
+        };
     }
 }
