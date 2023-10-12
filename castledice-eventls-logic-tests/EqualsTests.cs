@@ -54,7 +54,7 @@ public class EqualsTests
         };
         yield return new object[]
         {
-            () => GetInitilizeClientDTO()
+            () => GetInitilizePlayerDTO()
         };
     }
 }

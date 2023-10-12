@@ -56,9 +56,9 @@ public static class ObjectCreationUtility
         return new MoveFromServerDTO(new PlaceMoveData(1, (1, 1), PlacementType.Knight));
     }
 
-    public static InitializeClientDTO GetInitilizeClientDTO()
+    public static InitializePlayerDTO GetInitilizePlayerDTO()
     {
-        return new InitializeClientDTO("somekey");
+        return new InitializePlayerDTO("somekey");
     }
     
     public static GameStartData GetGameStartData()
