@@ -3,6 +3,8 @@ using casltedice_events_logic.ClientToServer;
 using casltedice_events_logic.ServerToClient;
 using castledice_game_data_logic;
 using castledice_game_data_logic.Content;
+using castledice_game_data_logic.Content.Generated;
+using castledice_game_data_logic.Content.Placeable;
 using castledice_game_data_logic.Moves;
 using castledice_game_logic;
 using castledice_game_logic.GameObjects;
@@ -65,13 +67,17 @@ public static class ObjectCreationUtility
         var playerIds = new List<int>() { 1, 2 };
         var firstCastle = new CastleData((0, 0), 1, 1, 3, 3, playerIds[0]);
         var secondCastle = new CastleData((9, 9), 1, 1, 3, 3, playerIds[1]);
-        var generatedContent = new List<ContentData>() { firstCastle, secondCastle };
+        var generatedContent = new List<GeneratedContentData>() { firstCastle, secondCastle };
+        var placeablesConfigs = new List<PlaceableContentData>
+        {
+            new KnightData(1, 2)
+        };
         var playerDecks = new List<PlayerDeckData>()
         {
             new(playerIds[0], new List<PlacementType> { PlacementType.Knight }),
             new (playerIds[1], new List<PlacementType> { PlacementType.Knight })
         };
-        var data = new GameStartData(boardLength, boardWidth, cellType, cellsPresence, generatedContent, 2, 1, playerIds, playerDecks);
+        var data = new GameStartData(boardLength, boardWidth, cellType, cellsPresence, generatedContent, placeablesConfigs, 2, 1, playerIds, playerDecks);
         return data;
     }
 
