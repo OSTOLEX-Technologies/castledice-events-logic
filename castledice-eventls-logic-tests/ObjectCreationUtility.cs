@@ -1,8 +1,6 @@
-﻿using System.Net.Http.Headers;
-using casltedice_events_logic.ClientToServer;
+﻿using casltedice_events_logic.ClientToServer;
 using casltedice_events_logic.ServerToClient;
 using castledice_game_data_logic;
-using castledice_game_data_logic.Content;
 using castledice_game_data_logic.Content.Generated;
 using castledice_game_data_logic.Content.Placeable;
 using castledice_game_data_logic.Moves;
@@ -65,6 +63,7 @@ public static class ObjectCreationUtility
     
     public static GameStartData GetGameStartData()
     {
+        var version = "1.0.0";
         var boardLength = 10;
         var boardWidth = 10;
         var cellType = CellType.Square;
@@ -82,7 +81,7 @@ public static class ObjectCreationUtility
             new(playerIds[0], new List<PlacementType> { PlacementType.Knight }),
             new (playerIds[1], new List<PlacementType> { PlacementType.Knight })
         };
-        var data = new GameStartData(boardLength, boardWidth, cellType, cellsPresence, generatedContent, placeablesConfigs, playerIds, playerDecks);
+        var data = new GameStartData(version, boardLength, boardWidth, cellType, cellsPresence, generatedContent, placeablesConfigs, playerIds, playerDecks);
         return data;
     }
 
