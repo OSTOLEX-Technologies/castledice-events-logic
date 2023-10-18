@@ -2,10 +2,10 @@
 
 public enum ServerToClientMessageType : ushort
 {
-    MatchFound,
-    CreateGame,
-    ApproveMove,
-    GiveActionPoints,
-    MakeMove,
-    CancelGame
+    MatchFound = 100,
+    CreateGame = 101,
+    ApproveMove = 102,
+    GiveActionPoints = 103,
+    MakeMove = 104,
+    CancelGame = 105
 }
