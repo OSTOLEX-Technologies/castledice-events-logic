@@ -33,7 +33,7 @@ public static class ObjectCreationUtility
 
     public static CancelGameResultDTO GetCancelGameResultDTO()
     {
-        return new CancelGameResultDTO(true);
+        return new CancelGameResultDTO(true, 1);
     }
 
     public static CreateGameDTO GetCreateGameDTO()

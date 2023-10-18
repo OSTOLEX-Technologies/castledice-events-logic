@@ -4,27 +4,26 @@
 public sealed class CancelGameResultDTO
 {
     public bool IsCanceled { get; }
+    public int PlayerId { get; }
 
-    public CancelGameResultDTO(bool isCanceled)
+    public CancelGameResultDTO(bool isCanceled, int playerId)
     {
         IsCanceled = isCanceled;
+        PlayerId = playerId;
     }
 
     private bool Equals(CancelGameResultDTO other)
     {
-        return IsCanceled == other.IsCanceled;
+        return IsCanceled == other.IsCanceled && PlayerId == other.PlayerId;
     }
 
     public override bool Equals(object? obj)
     {
-        if (ReferenceEquals(null, obj)) return false;
-        if (ReferenceEquals(this, obj)) return true;
-        if (obj.GetType() != this.GetType()) return false;
-        return Equals((CancelGameResultDTO)obj);
+        return ReferenceEquals(this, obj) || obj is CancelGameResultDTO other && Equals(other);
     }
 
     public override int GetHashCode()
     {
-        return IsCanceled.GetHashCode();
+        return HashCode.Combine(IsCanceled, PlayerId);
     }
 }
