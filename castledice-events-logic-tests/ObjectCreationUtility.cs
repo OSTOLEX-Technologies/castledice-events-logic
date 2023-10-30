@@ -7,7 +7,7 @@ using castledice_game_data_logic.Moves;
 using castledice_game_logic;
 using castledice_game_logic.GameObjects;
 
-namespace castledice_eventls_logic_tests;
+namespace castledice_events_logic_tests;
 
 public static class ObjectCreationUtility
 {

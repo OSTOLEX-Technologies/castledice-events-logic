@@ -1,6 +1,6 @@
-using static castledice_eventls_logic_tests.ObjectCreationUtility;
+using static castledice_events_logic_tests.ObjectCreationUtility;
 
-namespace castledice_eventls_logic_tests;
+namespace castledice_events_logic_tests;
 
 public class EqualsTests
 {
