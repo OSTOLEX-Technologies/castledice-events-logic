@@ -2,6 +2,7 @@
 using casltedice_events_logic.ClientToServer;
 using casltedice_events_logic.ServerToClient;
 using castledice_game_data_logic;
+using castledice_game_data_logic.ConfigsData;
 using castledice_game_data_logic.Content;
 using castledice_game_data_logic.Moves;
 using castledice_game_logic;
@@ -63,21 +64,38 @@ public static class ObjectCreationUtility
     
     public static GameStartData GetGameStartData()
     {
-        var boardLength = 10;
-        var boardWidth = 10;
-        var cellType = CellType.Square;
-        var cellsPresence = GetNByNTrueBoolMatrix(10);
+        var version = "1.0.0";
         var playerIds = new List<int>() { 1, 2 };
-        var firstCastle = new CastleData((0, 0), 1, 1, 3, 3, playerIds[0]);
-        var secondCastle = new CastleData((9, 9), 1, 1, 3, 3, playerIds[1]);
-        var generatedContent = new List<ContentData>() { firstCastle, secondCastle };
+        var boardConfigData = GetBoardData();
+        var placeablesConfigs = new PlaceablesConfigData(GetKnightConfigData());
         var playerDecks = new List<PlayerDeckData>()
         {
             new(playerIds[0], new List<PlacementType> { PlacementType.Knight }),
             new (playerIds[1], new List<PlacementType> { PlacementType.Knight })
         };
-        var data = new GameStartData(boardLength, boardWidth, cellType, cellsPresence, generatedContent, 2, 1, playerIds, playerDecks);
+        var data = new GameStartData(version, boardConfigData, placeablesConfigs, playerIds, playerDecks);
         return data;
+    }
+
+    public static BoardData GetBoardData()
+    {
+        var boardLength = 10;
+        var boardWidth = 10;
+        var cellType = CellType.Square;
+        var cellsPresence = GetNByNTrueBoolMatrix(10);
+        var firstCastle = new CastleData((0, 0), 1, 1, 3, 3, 1);
+        var secondCastle = new CastleData((9, 9), 1, 1, 3, 3, 2);
+        var generatedContent = new List<ContentData>
+        {
+            firstCastle, 
+            secondCastle
+        };
+        return new BoardData(boardLength, boardWidth, cellType, cellsPresence, generatedContent);
+    }
+    
+    public static KnightConfigData GetKnightConfigData()
+    {
+        return new KnightConfigData(1, 2);
     }
 
     public static bool[,] GetNByNTrueBoolMatrix(int size)
