@@ -26,6 +26,11 @@ public static class ObjectCreationUtility
         return new RequestGameDTO("somekey");
     }
 
+    public static PlayerReadyDTO GetPlayerReadyDTO()
+    {
+        return new PlayerReadyDTO("somekey");
+    }
+
     public static ApproveMoveDTO GetApproveMoveDTO()
     {
         return new ApproveMoveDTO(true); 

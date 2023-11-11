@@ -56,5 +56,9 @@ public class EqualsTests
         {
             () => GetInitilizePlayerDTO()
         };
+        yield return new object[]
+        {
+            () => GetPlayerReadyDTO()
+        };
     }
 }
