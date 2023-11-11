@@ -5,5 +5,6 @@ public enum ClientToServerMessageType : ushort
     RequestGame,
     MakeMove,
     CancelGame,
-    InitializePlayer
+    InitializePlayer,
+    PlayerReady
 }
