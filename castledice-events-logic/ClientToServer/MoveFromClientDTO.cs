@@ -1,6 +1,6 @@
 ﻿using castledice_game_data_logic.Moves;
 
-namespace casltedice_events_logic.ClientToServer;
+namespace castledice_events_logic.ClientToServer;
 
 [Serializable]
 public sealed class MoveFromClientDTO : ClientToServerDTO

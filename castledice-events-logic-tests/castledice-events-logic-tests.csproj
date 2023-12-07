@@ -33,7 +33,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\casltedice-events-logic\casltedice-events-logic.csproj" />
+      <ProjectReference Include="..\castledice-events-logic\castledice-events-logic.csproj" />
     </ItemGroup>
 
 </Project>
