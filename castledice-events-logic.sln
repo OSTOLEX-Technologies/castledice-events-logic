@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "casltedice-events-logic", "casltedice-events-logic\casltedice-events-logic.csproj", "{732F8F0E-317C-473D-B13C-1D2DE9D43E26}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "castledice-events-logic", "castledice-events-logic\castledice-events-logic.csproj", "{732F8F0E-317C-473D-B13C-1D2DE9D43E26}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "castledice-events-logic-tests", "castledice-events-logic-tests\castledice-events-logic-tests.csproj", "{C8CBEBA6-BD35-4CC6-A286-F6AEBE12D976}"
 EndProject

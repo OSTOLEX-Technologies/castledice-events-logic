@@ -1,4 +1,4 @@
-﻿namespace casltedice_events_logic.ServerToClient;
+﻿namespace castledice_events_logic.ServerToClient;
 
 [Serializable]
 public sealed class GiveActionPointsDTO

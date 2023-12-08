@@ -1,4 +1,4 @@
-﻿namespace casltedice_events_logic.ClientToServer;
+﻿namespace castledice_events_logic.ClientToServer;
 
 [Serializable]
 public sealed class CancelGameDTO : ClientToServerDTO
