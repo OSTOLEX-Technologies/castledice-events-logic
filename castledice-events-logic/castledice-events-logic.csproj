@@ -10,7 +10,7 @@
 
     <ItemGroup>
       <PackageReference Include="castledice-game-logic" Version="0.0.1-dev3" />
-      <PackageReference Include="castledice-game-data-logic" Version="0.0.1-dev1" />
+      <PackageReference Include="castledice-game-data-logic" Version="0.0.1-dev4" />
     </ItemGroup>
 
 </Project>

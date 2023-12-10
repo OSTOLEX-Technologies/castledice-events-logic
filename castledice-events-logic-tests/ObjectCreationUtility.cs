@@ -1,4 +1,5 @@
-﻿using castledice_events_logic.ClientToServer;
+﻿using casltedice_events_logic.ServerToClient;
+using castledice_events_logic.ClientToServer;
 using castledice_events_logic.ServerToClient;
 using castledice_game_data_logic;
 using castledice_game_data_logic.ConfigsData;
