@@ -60,5 +60,9 @@ public class EqualsTests
         {
             () => GetPlayerReadyDTO()
         };
+        yield return new object[]
+        {
+            () => GetServerErrorDTO()
+        };
     }
 }

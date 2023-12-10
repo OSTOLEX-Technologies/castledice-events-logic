@@ -1,5 +1,6 @@
 ﻿namespace castledice_events_logic.ServerToClient;
 
+[Serializable]
 public sealed class MatchFoundDTO
 {
     public List<int> PlayerIds { get; }
