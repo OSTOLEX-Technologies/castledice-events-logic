@@ -10,4 +10,5 @@ public enum ServerToClientMessageType : ushort
     MakeMove = 104,
     CancelGame = 105,
     Error = 106,
+    SwitchTimer = 107,
 }
