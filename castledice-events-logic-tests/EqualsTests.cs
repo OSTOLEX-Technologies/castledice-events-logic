@@ -64,5 +64,9 @@ public class EqualsTests
         {
             () => GetServerErrorDTO()
         };
+        yield return new object[]
+        {
+            () => GetSwitchTimerDTO()
+        };
     }
 }

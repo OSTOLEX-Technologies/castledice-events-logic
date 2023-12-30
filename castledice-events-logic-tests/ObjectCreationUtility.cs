@@ -124,4 +124,9 @@ public static class ObjectCreationUtility
 
         return matrix;
     }
+    
+    public static SwitchTimerDTO GetSwitchTimerDTO()
+    {
+        return new SwitchTimerDTO(new TimeSpan(), 3, false);
+    }
 }
